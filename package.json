@@ -1,0 +1,29 @@
+{
+    "name": "rn-custom-toast",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roundcubelabs/rn-custom-toast.git"
+    },
+    "keywords": [
+        "react-native",
+        "react-component",
+        "react-native-component",
+        "toast",
+        "custom toast",
+        "alert",
+        "react",
+        "react native",
+        "mobile",
+        "ios",
+        "android",
+        "ui"
+    ],
+    "author": "roundCube Labs",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/roundcubelabs/rn-custom-toast/issues"
+    },
+    "homepage": "https://github.com/roundcubelabs/rn-custom-toast#readme"
+}

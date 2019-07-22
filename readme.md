@@ -1,7 +1,7 @@
 # rn-custom-toast
  Module for react-native to show android like toast messages on both Android and iOS with customisations.
  ![NPM Version](https://img.shields.io/npm/v/rn-custom-toast.svg?style=popout-square&color=blue)  ![Repo Size](https://img.shields.io/github/repo-size/roundcubelabs/rn-custom-toast.svg?style=popout-square&color=blue)  ![Downloads](https://img.shields.io/npm/dw/rn-custom-toast.svg?color=blue&style=popout-square)
-![roundCube Labs](https://img.shields.io/badge/Package%20By-roundCubeLabs-blue.svg)
+![roundCube Labs](https://img.shields.io/badge/Package%20By-roundCubeLabs-blue.svg?style=popout-square)
 
 ![ rn-custom-toast Demo](https://i.postimg.cc/k49WkQf4/rn-custom-toast-gif.gif)
 

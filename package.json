@@ -1,6 +1,7 @@
 {
     "name": "rn-custom-toast",
-    "version": "1.0.0",
+    "version": "1.0.2",
+    "description": "A simple and fully customizable React Native component that toasts for both android an iOS.",
     "main": "index.js",
     "repository": {
         "type": "git",
@@ -25,5 +26,8 @@
     "bugs": {
         "url": "https://github.com/roundcubelabs/rn-custom-toast/issues"
     },
-    "homepage": "https://github.com/roundcubelabs/rn-custom-toast#readme"
+    "homepage": "https://github.com/roundcubelabs/rn-custom-toast#readme",
+    "devDependencies": {
+        "metro-react-native-babel-preset": "^0.55.0"
+    }
 }

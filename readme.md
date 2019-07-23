@@ -63,7 +63,7 @@ Example Code:
       }
     }
 For a much detailed example take a look at the  `/examples`  directory.
-## Available Props
+## Available Options
 
 |        Name       	|        Type       	| Default 	|                    Possible Values                   	|
 |:-----------------:	|:-----------------:	|:-------:	|:----------------------------------------------------:	|

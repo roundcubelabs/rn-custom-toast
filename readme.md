@@ -74,6 +74,11 @@ For a much detailed example take a look at the  `/examples`  directory.
 |  showCloseButton  	|        bool       	|   true  	|                     [true,false]                     	|
 | animationDuration 	|      Integer      	|   300   	|                     Milliseconds                     	|
 |       shadow      	|        bool       	|   true  	|                      [true,false]                     	|
+|       customTheme   |        object       |   null  	|                                          	|
+|       customTheme.container   |        styles object       |   null  	|              {backgroundColor: 'red'}          |
+|       customTheme.closeContainer   |        styles object       |   null  	|              {backgroundColor: 'red'}    |
+|       customTheme.text   |        styles object       |   null  	|              {color: 'blue'}    |
+|       customTheme.closeText   |        styles object       |   null  	|              {color: 'blue'}    |
 
 
 ## Feedback

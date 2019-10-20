@@ -8,7 +8,8 @@
 
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Image, Linking } from 'react-native';
-import { Toast } from 'rn-custom-toast'
+// import { Toast } from 'rn-custom-toast'
+import Toast from './Toast'
 
 export default class App extends Component {
   constructor(props) {
@@ -207,6 +208,34 @@ export default class App extends Component {
               })
             }}>
             <Text>Custom Example</Text>
+          </TouchableOpacity>
+
+
+          <TouchableOpacity
+            style={{ padding: 10 }}
+            onPress={() => {
+              this.refs.toast.show("Just another toast with custom theme", {
+                customTheme: {
+                  container: {
+                    backgroundColor: 'red'
+                  },
+                  closeContainer: {
+                    backgroundColor: 'yellow',
+                  },
+                  text: {
+                    color: 'green',
+                    backgroundColor: 'transparent'
+                  },
+                  closeText: {
+                    color: 'orange',
+                    backgroundColor: 'transparent'
+
+                  }
+                }
+
+              })
+            }}>
+            <Text>Custom Theme</Text>
           </TouchableOpacity>
 
 

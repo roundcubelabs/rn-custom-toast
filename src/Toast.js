@@ -14,7 +14,8 @@ export default class Toast extends Component {
             position: "bottom",
             animation: "fade",
             showCloseButton: true,
-            animationDuration: 300
+            animationDuration: 300,
+            customTheme: null
         };
 
     }
@@ -30,7 +31,8 @@ export default class Toast extends Component {
             showCloseButton: options.showCloseButton !== undefined ? options.showCloseButton : true,
             duration: options.duration ? options.duration : "short",
             animationDuration: options.animationDuration ? options.animationDuration : 300,
-            content: content
+            content: content,
+            customTheme: options.customTheme ? options.customTheme : null
         }, () => {
             this.showToast()
 
@@ -197,10 +199,10 @@ export default class Toast extends Component {
                         position.toLowerCase() === "bottom" ? 40 : "auto",
                     display: this.state.visible ? "flex" : "none"
 
-                }]}>
+                }, this.state.customTheme ? this.state.customTheme.container : null]}>
                 <View style={styles.content} >
                     {typeof this.state.content !== "object" ?
-                        (<Text style={themeStyle}>{this.state.content}</Text>
+                        (<Text style={[themeStyle, this.state.customTheme ? this.state.customTheme.text : null]}>{this.state.content}</Text>
                         )
                         :
                         (this.state.content)
@@ -208,8 +210,8 @@ export default class Toast extends Component {
                 </View>
                 {this.state.showCloseButton ?
                     (
-                        <TouchableOpacity style={[styles.closeButton, themeCloseStyle]} onPress={() => { this.hideToast() }}>
-                            <Text style={[styles.closeButtonText, themeStyle]}>Close</Text>
+                        <TouchableOpacity style={[styles.closeButton, themeCloseStyle, this.state.customTheme ? this.state.customTheme.closeContainer : null]} onPress={() => { this.hideToast() }}>
+                            <Text style={[styles.closeButtonText, themeStyle, this.state.customTheme ? this.state.customTheme.closeText : null]}>Close</Text>
                         </TouchableOpacity>
                     )
                     :
